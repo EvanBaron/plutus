@@ -1,0 +1,13 @@
+[Unit]
+Description=Plutus Discord Bot Auto-Updater
+After=network.target
+
+[Service]
+User=root
+WorkingDirectory=/root/plutus-bot/deployment
+EnvironmentFile=/root/plutus-bot/deployment/.env
+ExecStart=/usr/bin/python3 webhook_listener.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
