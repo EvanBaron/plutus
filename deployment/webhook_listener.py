@@ -5,7 +5,7 @@ import hashlib
 import os
 import subprocess
 
-PORT = 5000
+PORT = 5001
 SECRET = os.environ.get("WEBHOOK_SECRET")
 SCRIPT_PATH = "./update.sh"
 
